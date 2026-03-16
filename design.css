@@ -23,9 +23,9 @@ body {
   max-width: 450px;
   padding: 30px;
   background: #fff;
-  border-radius: 10px;  
-  box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1);
-  display: none; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
 }
 
 .form-box.active {
@@ -46,7 +46,7 @@ input {
   border: none;
   outline: none;
   font-size: 16px;
-  color:#333;
+  color: #333;
   margin-bottom: 20px;
 
 }
@@ -77,10 +77,64 @@ p {
 
 p a {
   color: #7494ec;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 p a:hover {
   text-decoration: underline;
 
+}
+
+.social-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid #e0e0e0;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.2s;
+}
+
+.social-btn:hover {
+  border-color: #7494ec;
+  background: #f0f3ff;
+}
+
+.social-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.divider {
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin: 16px 0;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
 }
